@@ -3,7 +3,7 @@
     [ngClass]="{ selected: selectedCategory === category }"
     class="category-item"
     *ngFor="let category of categories"
-    (click)="onSelectCategory(category)"
+    (click)="selectCategory(category)"
   >
     {{ category.category }}
   </div>
@@ -13,7 +13,7 @@
   <div class="subcategory-container">
     <div
       class="subcategory-item"
-      *ngFor="let subCategory of getFilteredSubCategories()"
+      *ngFor="let subCategory of getSubCategories()"
     >
       {{ subCategory.label }}
     </div>

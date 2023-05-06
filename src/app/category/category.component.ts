@@ -54,14 +54,16 @@ export class CategoryComponent {
 
   selectedCategory: Category | null = null;
 
-  getFilteredSubCategories(): SubCategory[] {
+  getSubCategories(): SubCategory[] {
     if (!this.selectedCategory) {
       return [];
     }
     return this.selectedCategory.subCategory.filter(subCat => this.allowedRoles.includes(subCat.role));
   }
 
-  onSelectCategory(category: Category): void {
+  selectCategory(category: Category): void {
+    console.log(category);
+
     this.selectedCategory = category;
   }
 
