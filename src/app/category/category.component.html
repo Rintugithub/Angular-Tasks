@@ -1,0 +1,17 @@
+<div class="category-container" >
+
+  <div   [ngClass]="{ 'selected': selectedCategory === category }" class="category-item" *ngFor="let category of categories" (click)="onSelectCategory(category)">
+    {{ category.category }}
+  </div>
+</div>
+
+<div *ngIf="selectedCategory">
+
+  <div class="subcategory-container"  >
+    <div class="subcategory-item" *ngFor="let subCategory of getFilteredSubCategories()">
+      {{ subCategory.label }}
+    </div>
+  </div>
+</div>
+
+
