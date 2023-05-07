@@ -2,10 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  justify-content: space-around;
+  justify-content: center;
   box-sizing: border-box;
   text-align: center;
-  vertical-align: middle;
+  gap: 10px;
+
+  /* vertical-align: middle; */
 }
 
 .category-item {
@@ -29,7 +31,7 @@
  align-items: center;
  justify-content: center;
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 
 
 }
