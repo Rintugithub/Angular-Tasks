@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   margin-top: 30px;
   justify-content: center;
-  box-sizing: border-box;
+  
   text-align: center;
   gap: 10px;
 
@@ -48,6 +48,10 @@
 .selected {
   background-color:  #d6d3d3;
 }
+ /* .category-item:hover{
+background-color:  #d6d3d3;
+
+} */
 /* .category-container {
   display: flex;
   flex-wrap: wrap;
